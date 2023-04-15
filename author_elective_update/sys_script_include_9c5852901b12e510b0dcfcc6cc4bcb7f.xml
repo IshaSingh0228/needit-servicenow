@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_58872_needit.validateEmailPhone</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>validateEmailPhone</name>
+        <script><![CDATA[function validateEmailPhone(email,phone){
+	var phone_pattern = /^\+91+ +[6-9][0-9]{3}-[0-9]{6}$/;
+	var email_pattern = /^[a-zA-z_0-9]+@+[a-z-_.A-Z0-9]+\.+[a-z0-9]+$/;
+	
+	if(phone.match(phone_pattern) && email.match(email_pattern)){
+		return 0;
+	}
+	if(phone.match(phone_pattern) && !email.match(email_pattern)){
+		return 1;
+	}
+	if(!phone.match(phone_pattern) && email.match(email_pattern)){
+		return 2;
+	}
+	else{
+		return -1;
+	}
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>sredevops_usr03</sys_created_by>
+        <sys_created_on>2023-04-15 14:12:14</sys_created_on>
+        <sys_id>9c5852901b12e510b0dcfcc6cc4bcb7f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>validateEmailPhone</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_include_9c5852901b12e510b0dcfcc6cc4bcb7f</sys_update_name>
+        <sys_updated_by>sredevops_usr03</sys_updated_by>
+        <sys_updated_on>2023-04-15 14:37:17</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>9d05a713dbf965d491232f17d4961950</instance_id>
+        <instance_name>dev169413</instance_name>
+        <name>sys_script_include_9c5852901b12e510b0dcfcc6cc4bcb7f</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_58872_needit.validateEmailPhone&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;validateEmailPhone&lt;/name&gt;&lt;script&gt;&lt;![CDATA[function validateEmailPhone(email,phone){
+	var phone_pattern = /^\+91+ +[6-9][0-9]{3}-[0-9]{6}$/;
+	var email_pattern = /^[a-zA-z_0-9]+@+[a-z-_.A-Z0-9]+\.+[a-z0-9]+$/;
+	
+	if(phone.match(phone_pattern) &amp;&amp; email.match(email_pattern)){
+		return 0;
+	}
+	if(phone.match(phone_pattern) &amp;&amp; !email.match(email_pattern)){
+		return 1;
+	}
+	if(!phone.match(phone_pattern) &amp;&amp; email.match(email_pattern)){
+		return 2;
+	}
+	else{
+		return -1;
+	}
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sredevops_usr03&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-15 14:12:14&lt;/sys_created_on&gt;&lt;sys_id&gt;9c5852901b12e510b0dcfcc6cc4bcb7f&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;validateEmailPhone&lt;/sys_name&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_9c5852901b12e510b0dcfcc6cc4bcb7f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sredevops_usr03&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-15 14:37:17&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1775853479</payload_hash>
+        <record_name>validateEmailPhone</record_name>
+        <reverted_from/>
+        <source>c98c02541bdea510b0dcfcc6cc4bcb80</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sredevops_usr03</sys_created_by>
+        <sys_created_on>2023-04-15 14:37:18</sys_created_on>
+        <sys_id>076e92181b12e510b0dcfcc6cc4bcb89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187855959360000001</sys_recorded_at>
+        <sys_updated_by>sredevops_usr03</sys_updated_by>
+        <sys_updated_on>2023-04-15 14:37:18</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>0f6e9218c812e510d8c7d1eb36373f88</update_guid>
+        <update_guid_history>0f6e9218c812e510d8c7d1eb36373f88:1775853479,c8b85e107a12e51033b93cf8c4ec2eec:659029818</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sredevops_usr02</sys_created_by>
+        <sys_created_on>2023-04-15 14:39:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>3d6690e254724e2a8928355522587944</sys_id>
+        <sys_metadata>9c5852901b12e510b0dcfcc6cc4bcb7f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>validateEmailPhone</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_script_include_9c5852901b12e510b0dcfcc6cc4bcb7f</sys_update_name>
+        <sys_update_version display_value="sys_script_include_9c5852901b12e510b0dcfcc6cc4bcb7f">076e92181b12e510b0dcfcc6cc4bcb89</sys_update_version>
+        <sys_updated_by>sredevops_usr02</sys_updated_by>
+        <sys_updated_on>2023-04-15 14:39:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
